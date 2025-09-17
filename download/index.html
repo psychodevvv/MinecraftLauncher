@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Launcher</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="../assets/icon.svg">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo" data-i18n="logo">Minecraft Launcher</a>
+        <div class="header-right">
+            <button id="langToggleDesktop" class="pill">EN</button>
+            <a href="https://ely.by/" class="lang-btn" id="langBtnDesktop" data-i18n="ely_profile">Профиль <u>Ely.by</u></a>
+        </div>
+        <button class="menu-toggle">☰</button>
+        <div class="mobile-menu">
+            <button id="langToggleMobile" class="pill">EN</button>
+            <a href="https://ely.by/" class="lang-btn" id="langBtnMobile" data-i18n="ely_profile">Профиль <u>Ely.by</u></a>
+        </div>
+    </header>
+<section class="download-section">
+  <h2 data-i18n="download_title">Скачать</h2>
+
+  <div class="download-card">
+    <div class="download-header">
+      <img src="../assets/windows.svg" alt="Windows">
+      <h3><span data-i18n="download_windows">Windows</span> <span class="badge" data-i18n="recommended">Рекомендуется</span></h3>
+    </div>
+    <ol>
+      <li data-i18n="win_step1">Скачайте установщик, нажав на кнопку ниже</li>
+      <li data-i18n="win_step2">Запустите его и следуйте инструкциям</li>
+    </ol>
+    <a href="https://dl.llaun.ch/legacy/installer" class="btn-download windows">
+      <img src="../assets/windows.svg" alt="">
+      <span data-i18n="download_installer">Скачать установщик</span>
+    </a>
+  </div>
+
+  <div class="download-card">
+    <div class="download-header">
+      <img src="../assets/apple.svg" alt="macOS">
+      <h3 data-i18n="download_mac">macOS</h3>
+      <p class="note" data-i18n="mac_note">на процессорах Intel (x64) или через Rosetta</p>
+    </div>
+    <ol>
+      <li data-i18n="mac_step1">Скачайте образ, нажав на кнопку ниже</li>
+      <li data-i18n="mac_step2">Запустите его и установите лаунчер</li>
+    </ol>
+    <a href="https://dl.llaun.ch/legacy/dmg" class="btn-download mac">
+      <img src="../assets/apple.svg" alt="">
+      <span data-i18n="download_image">Скачать образ</span>
+    </a>
+  </div>
+
+  <div class="download-card">
+    <div class="download-header">
+      <img src="../assets/java.svg" alt="Java">
+      <h3 data-i18n="download_java">Установка Java вручную</h3>
+    </div>
+    <ol>
+      <li data-i18n="java_step1">
+        Загрузите и установите свежую версию Java для вашей платформы, например с сайта 
+        <a href="https://adoptium.net/" target="_blank">Adoptium</a>
+      </li>
+      <li data-i18n="java_step2">
+        Скачайте и запустите 
+        <a href="https://dl.llaun.ch/legacy/bootstrap">.jar-файл лаунчера</a>. Он установит всё необходимое
+      </li>
+    </ol>
+  </div>
+</section>
+    <footer>
+        <p data-i18n="footer_text">
+            Игра имеет возрастное ограничение 6+. Возрастная маркировка при игре по сети задаётся владельцами серверов 
+            и контент на них<br>может быть запрещён для детей. 
+            <a href="https://www.minecraft.net/ru-ru/get-minecraft/age-rating" target="_blank">
+                Подробнее о возрастных ограничениях на сайте Minecraft.
+            </a> <br>
+            НЕ ЯВЛЯЕТСЯ ОФИЦИАЛЬНЫМ ПРОДУКТОМ MINECRAFT. НЕ ОДОБРЕНО И НЕ СВЯЗАНО С MOJANG ИЛИ MICROSOFT. <br>
+            Minecraft Launcher никоим образом не аффилирован с Mojang Studios и не должен считаться проектом, одобренным Mojang Studios. <br>
+            По любым вопросам, предложениям или жалобам обращайтесь:
+            <a href="mailto:support@support.com">support@support.com</a> <br>
+        </p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

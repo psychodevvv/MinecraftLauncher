@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Launcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/icon.svg">
+</head>
+<body>
+    <header>
+        <a href="" class="logo" data-i18n="logo">Minecraft Launcher</a>
+        <div class="header-right">
+            <button id="langToggleDesktop" class="pill">EN</button>
+            <a href="https://ely.by/" class="lang-btn" id="langBtnDesktop" data-i18n="ely_profile">Профиль <u>Ely.by</u></a>
+        </div>
+        <button class="menu-toggle">☰</button>
+        <div class="mobile-menu">
+            <button id="langToggleMobile" class="pill">EN</button>
+            <a href="https://ely.by/" class="lang-btn" id="langBtnMobile" data-i18n="ely_profile">Профиль <u>Ely.by</u></a>
+        </div>
+    </header>
+
+    <section class="first">
+        <div class="first-content">
+            <h1 data-i18n="main_title">Лаунчер Minecraft</h1>
+            <p class="subtitle" data-i18n="main_subtitle">Стабильный, быстрый и простой</p>
+            <div class="first-buttons">
+                <a href="./download/index.html" class="download-btn" data-i18n="download_win">Скачать Лаунчер</a>
+                <br><br><br>
+                <a href="./!vazhnno/index.html" class="game-btn" data-i18n="play_online">Сыграть онлайн</a>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h2>155K</h2>
+                <p data-i18n="players_today">игроков сегодня</p>
+            </div>
+            <div class="card">
+                <h2>19K</h2>
+                <p data-i18n="players_online">игроков онлайн</p>
+            </div>
+            <div class="card">
+                <h2>1M</h2>
+                <p data-i18n="players_month">игроков за месяц</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="screenshots">
+        <h2 data-i18n="screenshots">Скриншоты</h2>
+        <div class="screenshot-viewer">
+            <img class="screenshot active" src="./assets/screen1.png" alt="Скриншот лаунчера">
+            <img class="screenshot next" src="./assets/screen2.png" alt="Скриншот лаунчера">
+        </div>
+        <div class="screenshot-thumbs">
+            <img src="./assets/screen1.png" alt="Скриншот 1">
+            <img src="./assets/screen2.png" alt="Скриншот 2">
+            <img src="./assets/screen3.png" alt="Скриншот 3">
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2 data-i18n="faq_title">Часто задаваемые вопросы</h2>
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="faq_q1">Это бесплатно?</button>
+            <div class="faq-answer">
+                <video autoplay loop muted>
+                    <source src="./assets/free.mp4" type="video/mp4">
+                </video>
+                <p data-i18n="faq_a1">Да, лаунчер полностью бесплатный.<br>У нас нет и никогда не будет платных функций.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="faq_q2">Есть ли вирусы?</button>
+            <div class="faq-answer">
+                <p data-i18n="faq_a2_1">Minecraft Launcher полностью безопасен. Если вы скачаете лаунчер с этой страницы, мы гарантируем, что он не будет содержать никаких вирусов.</p>
+                <p data-i18n="faq_a2_2">Боитесь за безопасность? Исходный код лаунчера доступен <a href="https://dl.llaun.ch/legacy/source">по этой ссылке</a>.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="faq_q3">Можно ли устанавливать читы?</button>
+            <div class="faq-answer">
+                <p data-i18n="faq_a3">Да, лаунчер позволяет запускать любые версии игры без ограничений.<br>Мы не рекомендуем использовать читы там, где это запрещено.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="faq_q4">Можно ли устанавливать моды и сборки?</button>
+            <div class="faq-answer">
+                <p data-i18n="faq_a4">Да, можно. В лаунчере можно выбрать версии с Forge и Fabric, а также устанавливать свои сборки вручную.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="faq_q5">Можно ли менять скины?</button>
+            <div class="faq-answer">
+                <p data-i18n="faq_a5">Да, конечно! Для этого можно использовать профиль Ely.by, он доступен по кнопке справа сверху на вашем экране.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="faq_q6">Есть ли портативная сборка?</button>
+            <div class="faq-answer">
+                <p data-i18n="faq_a6">Да, есть. Можно <a href="https://dl.llaun.ch/legacy/portable">скачать портативную сборку здесь</a>.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="faq_q7">Не запускается игра. Что делать?</button>
+            <div class="faq-answer">
+                <p data-i18n="faq_a7">Обратитесь в нашу бесплатную поддержку по ссылке ниже.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="support">
+        <h2 data-i18n="support_title">Поддержка</h2>
+        <div class="support-text">
+            <p data-i18n="support_text">Вы всегда можете обратиться к нам за помощью, если что-то не работает или работает не так, как вы ожидаете.<br>Наша опытная команда разработчиков и волонтёров постарается вам помочь.</p>
+        </div>
+        <form id="contactForm" class="contact-form" novalidate>
+            <h3 data-i18n="form_title">Связаться с поддержкой</h3>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" data-i18n-placeholder="form_name" />
+            <input type="email" id="email" name="email" placeholder="Email" data-i18n-placeholder="form_email" />
+            <textarea id="message" name="message" rows="5" placeholder="Сообщение" data-i18n-placeholder="form_message"></textarea>
+            <div class="form-row">
+                <button type="submit" class="submit-btn" data-i18n="form_send">Отправить</button>
+                <div id="formStatus" class="form-status" aria-live="polite"></div>
+            </div>
+        </form>
+        <div class="support-links">
+            <a href="https://discord.gg/" target="_blank" class="support-card">
+                <img src="./assets/discord.svg" alt="Discord">
+                <span>Discord</span>
+            </a>
+            <a href="https://vk.com/" target="_blank" class="support-card">
+                <img src="./assets/vk.svg" alt="ВКонтакте">
+                <span data-i18n="vk">ВКонтакте</span>
+            </a>
+        </div>
+    </section>
+
+    <div class="support-links">
+            <a href="./about/index.html" class="support-card">
+                <img src="./assets/about.svg" alt="О нас">
+                <span data-i18n="about_btn">О нас</span>
+            </a>
+        </div>
+
+    <footer>
+        <p data-i18n="footer_text">
+            Игра имеет возрастное ограничение 6+. Возрастная маркировка при игре по сети задаётся владельцами серверов 
+            и контент на них<br>может быть запрещён для детей. 
+            <a href="https://www.minecraft.net/ru-ru/get-minecraft/age-rating" target="_blank">
+                Подробнее о возрастных ограничениях на сайте Minecraft.
+            </a> <br>
+            НЕ ЯВЛЯЕТСЯ ОФИЦИАЛЬНЫМ ПРОДУКТОМ MINECRAFT. НЕ ОДОБРЕНО И НЕ СВЯЗАНО С MOJANG ИЛИ MICROSOFT. <br>
+            Minecraft Launcher никоим образом не аффилирован с Mojang Studios и не должен считаться проектом, одобренным Mojang Studios. <br>
+            По любым вопросам, предложениям или жалобам обращайтесь:
+            <a href="mailto:support@support.com">support@support.com</a> <br>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

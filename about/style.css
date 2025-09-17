@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    display: block;
+}
+
+::selection {
+    background: #38c5fd;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+br {
+    user-select: none;
+}
+
+textarea {
+    resize: none;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3a3a3a;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5c5c5c;
+    cursor: pointer;
+}
+
+body {
+    font-family: "Chiron GoRound TC", sans-serif;
+    background: #141414;
+    color: white;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(to bottom, rgba(0,0,0,0) 70%, #141414 100%),
+        url("../assets/bg.png") no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: -1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(20, 20, 20, 0.82);
+    backdrop-filter: blur(20px);
+    padding: 12px 24px;
+    z-index: 1000;
+}
+
+.pill {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    user-select: none;
+}
+
+.pill:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 100px;
+    user-select: none;
+}
+
+.lang-btn {
+    background: rgba(255, 255, 255, 0.1);
+    width: 150px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    user-select: none;
+    text-align: center;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.about {
+    max-width: 1000px;
+    padding: 20px;
+    margin: 100px auto 50px auto;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.about-card {
+    background: linear-gradient(145deg, rgba(30,30,30,0.9), rgba(20,20,20,0.85));
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.5);
+    transition: all 0.4s ease;
+}
+
+.about-card:hover {
+    box-shadow: 0 0 22px rgba(56,197,253,0.25);
+    transform: translateY(-4px);
+}
+
+.about-intro h1 {
+    font-size: 46px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    text-align: center;
+    background: linear-gradient(90deg, #38c5fd, #84c3ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-intro p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-intro a {
+    color: #38c5fd;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.about-intro a:hover {
+    color: #84c3ff;
+    text-decoration: underline;
+}
+
+.about-team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+.team-member {
+    background: rgba(24, 24, 24, 0.75);
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    text-align: center;
+    transition: all 0.4s ease;
+    max-width: 380px;
+    width: 100%;
+    animation: fadeUp 0.9s ease;
+}
+
+.team-member:hover {
+    box-shadow: 0 0 16px rgba(56,197,253,0.4);
+    transform: translateY(-6px);
+}
+
+.team-member img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 3px solid rgba(255,255,255,0.25);
+    transition: transform 0.4s ease, border-color 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.05);
+    border-color: #38c5fd;
+}
+
+.team-member h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 8px;
+}
+
+.team-member a {
+    color: #38c5fd;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.team-member a:hover {
+    color: #84c3ff;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(40px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+footer {
+    padding: 20px 40px;
+    color: #ffffff73;
+    font-size: 16px;
+    line-height: 1.8;
+    transition: color 0.3s ease;
+    margin-bottom: 50px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+footer:hover {
+    color: #fff;
+}
+
+footer a {
+    color: #384cfd79;
+    transition: color 0.3s ease;
+}
+
+footer:hover a {
+    color: #384cfd;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    top: 100%;
+    right: 16px;
+    background: rgba(20, 20, 20, 0.82);
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        padding: 10px 16px;
+    }
+    .header-right {
+        margin-right: 0;
+        margin-top: 10px;
+        gap: 16px;
+    }
+    .logo {
+        font-size: 18px;
+    }
+    .header-right {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
